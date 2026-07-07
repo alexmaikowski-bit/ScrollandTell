@@ -342,7 +342,7 @@
       }
     }
     </script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.26.4/babel.min.js"></script>
 </head>
 <body>
     <div id="root"></div>
@@ -382,10 +382,12 @@
             { id: 'pyramid', name: '1 / 9 / 90', author: 'Devon Esper', authorImage: 'https://i.postimg.cc/L8pvHk8g/Screenshot-2026-04-28-at-10-14-16-PM.png', description: 'Cultural strategy through the 1/9/90 lens — creators, curators, consumers.' },
             { id: 'vibe-shift', name: 'Vibe Shifting', author: 'Nick Thomas-Cárcamo', authorImage: 'https://i.postimg.cc/sgTWt5Bt/Screenshot-2026-04-28-at-10-17-24-PM.png', description: 'The cultural format wars — and what survives the next vibe shift.' },
             { id: 'above-algo', name: 'Above the Algorithm', author: 'Michael J. Miraflor', authorImage: 'https://i.postimg.cc/htYjLszw/Screenshot-2026-04-28-at-10-20-55-PM.png', description: 'What happens to culture when you look up from the feed.' },
+            { id: 'youth-dept', name: 'The Youth Department', author: 'Reid Litman', authorImage: 'https://i.postimg.cc/gjKbMJ6V/1645473462823.jpg', description: 'Field notes from the world\'s largest focus group.' },
         ];
 
         const ISSUES = [
-            { id: '2026-06', name: 'June', year: '2026', label: 'JUNE ISSUE', current: true },
+            { id: '2026-07', name: 'July', year: '2026', label: 'JULY ISSUE', current: true },
+            { id: '2026-06', name: 'June', year: '2026', label: 'JUNE ISSUE', current: false },
             { id: '2026-05', name: 'May', year: '2026', label: 'MAY ISSUE', current: false },
             { id: '2026-04', name: 'April', year: '2026', label: 'APRIL ISSUE', current: false },
             { id: '2026-03', name: 'March', year: '2026', label: 'MARCH ISSUE', current: false },
@@ -425,6 +427,102 @@
 
         // --- SIGNALS & BRIEF STARTERS ---
         const SIGNALS = {
+            // --- JULY 2026 ---
+            'jul-26-finance': {
+                signal: 'A bookshelf is a balance sheet — reading communities turned a private habit into social capital.',
+                play: 'BookTok made the physical book haul a status object: sprayed-edge "shelf art" copies, duplicate buys, book-club brunches that fuel local bookstores. The habit reads as patient, compounding self-investment — dollar-cost averaging for the mind.',
+                briefStarter: 'For any brand in self-improvement, finance, beauty, or lifestyle: borrow the "compounding habit" frame. Position your product as the small daily deposit (20 pages, one routine) that quietly builds an asset over time, and give the habit a social surface — a shelf, a haul, a club — so private discipline becomes shareable status. The collection IS the flex.',
+            },
+            'jul-26-youth': {
+                signal: 'Brand guidelines lock the door; "Playcodes" hand out keys — and Gen Z is skipping the career ladder entirely.',
+                play: 'Disney is reportedly opening its IP to fan AI generation; 20-year-old Asher Hyde builds speculative Nike campaigns without an agency brief. Access and remix rights are now under-used marketing levers, and Direct-to-Brand talent demonstrates first and gets found.',
+                briefStarter: 'Rewrite one section of your brand guidelines as Playcodes: define what fans can build with your IP, which remixes you want to exist, and what a fan-made world inside your universe looks like. Separately, audit your talent pipeline — the best young creators won\'t wait in line, so create a "demonstrate-first" path (open briefs, bounties, fan commissions) that finds them where they already are.',
+            },
+            'jul-26-extra': {
+                signal: 'Value accrues earned → owned → shared → then paid. Most brands run the sequence backwards.',
+                play: 'JD\'s 40p yellow carrier bag became a two-decade media channel and membership card before a single pound of paid touched it. The 2023 Forever Forward ad didn\'t build the meaning — it bought a ticket to it.',
+                briefStarter: 'Before funding paid, ask what your brand has actually earned, owned, and seen shared organically — and amplify THAT instead of manufacturing meaning from scratch. Look for the cheap, ownable artefact (a bag, a color, a gesture) the culture is already assigning status to, and protect and feed it. Paid should arrive last, as fuel on an existing fire, not the spark.',
+            },
+            'jul-26-gameboy': {
+                signal: 'When a launch gets big enough, it rewrites the rules everyone else still obeys.',
+                play: 'GTA VI reportedly cleared an estimated $1B in its first hour of pre-orders — $80–100, no disc, no resale rights, no download for months — and the line didn\'t shrink. Rival studios cleared the fall calendar rather than compete.',
+                briefStarter: 'For non-gaming brands: the way into a cultural juggernaut is never the product itself (Rockstar sells no in-game space) — it\'s everything around it: the talent, creators, and conversation. Plan a presence in the surrounding culture months ahead of a tentpole moment, not inside the walled garden. The real risk with a moment this size was never touching it — it was sitting it out.',
+            },
+            'jul-26-algo': {
+                signal: 'The World Cup turned the US and the rest of the world into each other\'s culture-shock content.',
+                play: 'Social filled with two-way discovery — Scots "drinking Boston dry," the world finding ranch dressing and unlimited soda refills, optimistic-support chants confusing Brits — all framed as "a giant sleepover with cousins our parents won\'t let us see."',
+                briefStarter: 'For any brand riding a global event with both a domestic and international audience: the richest content is the culture gap itself, played for warmth not superiority. Surface the small, specific rituals outsiders find baffling or charming (your version of ranch dressing and free refills) and let both sides see themselves. Mutual discovery travels further than one-sided national pride.',
+            },
+            'jul-26-theta': {
+                signal: 'The question is never whether you have an edge — it\'s how much to bet on it.',
+                play: 'The Kelly criterion sizes the bet to the edge: small, shaky edge — small bet; big, reliable edge — bigger, but never so much that a normal run of bad luck takes you out of the game. The pros bet half, because the math assumes a certainty about your edge that humility says you don\'t have.',
+                briefStarter: 'Apply Kelly thinking to budget and risk allocation: match spend to the strength of the evidence, not the size of the ambition. On unproven bets, size small enough to survive a bad run and stay in the game; on proven, high-conviction plays, lean in. And bet "half-Kelly" on anything where you\'re guessing at the edge — surviving to compound beats maximizing any single swing.',
+            },
+            'jul-26-pyramid': {
+                signal: 'The brands that stick don\'t react to a cultural moment — they add something new to it.',
+                play: 'Levi\'s leaned into its FIFA-mandated logo cover-up; Convene playfully owned a fan knocking a letter off its parade sign; DoorDash manufactured a moment by tagging T-Pain instead of footballer Tim Payne. Each contributed to the conversation rather than commandeering it.',
+                briefStarter: 'When chasing a live cultural moment, don\'t fight for the safe, crowded angle everyone else is copying. Find the contribution only your brand can make — extend an accident, lean into your own constraint, or manufacture a playful collision — so you add to the conversation instead of free-riding on it. Best case: create the moment everyone else wants to join.',
+            },
+            'jul-26-dataviz': {
+                signal: 'A match told entirely in shape and color — no numbers, no words.',
+                play: 'Designer Zeh Fernandes translates each World Cup match — time, goals, attempts, cards, "drama" — into a 2D grid of noise and gravity, producing a pure visual fingerprint of the game. (Full collection at gencup.art.)',
+                briefStarter: 'For data-rich brands (sports, finance, fitness, logistics): stop defaulting to the chart. Build a generative visual system where each data point tweaks one aspect of an image, turning your numbers into shareable, collectible artefacts. A "fingerprint" of every game, workout, or order is more ownable — and more screenshot-able — than another dashboard.',
+            },
+            'jul-26-sustain': {
+                signal: 'While the palais toasted AI over rosé, sustainability leaders made Cannes about accountability.',
+                play: 'Clean Creatives ran "Unpitch Fossil Fuels" workshops; Creatives for Climate launched a GreenSHOUTING guide; ACT Responsible named six "Champions of Good"; CAN challenged the industry; journalists fact-checked SDG Lions winners.',
+                briefStarter: 'If your brand makes sustainability claims, pressure-test them against the scrutiny now aimed at award-winners (see DeSmog\'s SDG Lions investigation): can every claim survive a journalist? Then move from greenhushing to confident, substantiated communication — borrow the GreenSHOUTING posture: say what you\'re actually doing, with proof, and back it with an industry pledge rather than a rosé toast.',
+            },
+            'jul-26-vibe': {
+                signal: 'Constraint isn\'t the enemy of creativity — it\'s the engine. Algorithmic abundance is.',
+                play: 'Nolan shoots The Odyssey entirely on IMAX; Jaws\' broken shark forced the dread that made it; A24 wins by staying small; Apple earns HBO-level prestige through a hand-made logo and a selective slate. Meanwhile LLM abundance defaults to the frictionless average.',
+                briefStarter: 'Reframe your constraints — small budget, narrow category, a quirky limitation — as the creative brief, not the obstacle. In a world of algorithmic sameness and infinite AI output, the safe, frictionless answer is now the risky one; influence is earned through taste, lived perspective, and intentional, delightful friction. If you have no constraint, impose one: it\'s usually the small sandbox that\'s worth playing in.',
+            },
+            'jul-26-influence': {
+                signal: 'Prime Day turned a skincare routine into a public "wins vs. swing-and-a-miss" audit — influence is now itemized.',
+                play: 'Taylor loaded her cart with Medicube\'s full lineup on Prime Day and rated it piece by piece: Pore Pads + Collagen Night Wrapping Mask win; Pink Peptide eye cream and serum miss (beaten by Beauty of Joseon). Verdict: not the best, but accessible and affordable — "would I influence you to try it? 100%."',
+                briefStarter: 'For any beauty or CPG brand: the most trusted creator content isn\'t the glowing all-5-stars haul — it\'s the honest itemized scorecard with wins AND misses. Seed products with creators and invite the real verdict; a credible "this one\'s a pass, but this one\'s a repurchase" converts better than blanket praise. When you can\'t win on prestige, lean into accessibility and price as the wedge (Prime Day, Amazon storefront, buy-direct).',
+            },
+            'jul-26-meme': {
+                signal: 'Sports gave the internet its best month of the year — and the brands who showed up "certified fresh" won the feed.',
+                play: 'The NBA Finals + World Cup turned June into a nonstop meme engine: players, celebrities, and brands all piled into the conversation with A-game reactive social. The winners skipped the stale and forced, and served content fans genuinely wanted to share.',
+                briefStarter: 'During a tentpole sports moment, reactive social is a use-it-or-lose-it window. Keep a nimble meme/reaction unit ready to move in hours, not days, and hold every post to a "certified fresh" bar — if it\'s stale or forced, don\'t ship it. The brands that transcend the game are the ones fans can\'t tell apart from a real fan.',
+            },
+            'jul-26-anon': {
+                signal: 'Meg Stalter conquered pop by satirizing it — committing to the bit so hard the parody becomes the real thing.',
+                play: 'Post-Hacks, Stalter reinvented as a "pop princess": a secret lookalike contest that morphed into a surprise listening party, performances at WeHo Pride and the Las Culturistas Awards, tracks like "Prettiest Girl in America" and "Gay." The joke exposes how much of pop is branding, production, and blind confidence over substance.',
+                briefStarter: 'For brands and creators: total commitment to a bit reads as more authentic than cautious, half-in marketing. Stalter proves you can critique a category and win in it at once — satire plus genuine craft (the tracks are actually good) beats winking irony. If you\'re going to do a character or a stunt, go all the way in; the magnificently committed version travels, the hedged one dies.',
+            },
+            'jul-26-sleeping': {
+                signal: 'Annoyance flipped to obsession — a free bird app turned one sleepless night into a 50-species scavenger hunt.',
+                play: 'Kept awake by two Great Horned Owls, Alec used Merlin Bird ID ("bird Shazam," by the Cornell Lab of Ornithology) to identify them, then couldn\'t stop — 50+ species in two weeks, including a Red-shouldered Hawk that landed on his fence. Curiosity as gateway drug.',
+                briefStarter: 'The stickiest engagement mechanic turns a minor irritation into a collectible hunt. Give people a frictionless "point and identify" tool plus a running tally, and a one-time curiosity becomes a daily habit. For any brand: find the small real-world annoyance your product can flip into discovery — and don\'t wait for the tentpole calendar moment (Earth Day) to activate it.',
+            },
+            'jul-26-sports': {
+                signal: 'Even Elmo has to pick a side — NYC turned a neutral tweet into a 28M-view loyalty test.',
+                play: 'Before the NBA Finals, Elmo tweeted he hoped "both teams have fun." New Yorkers revolted (28M+ views), demanding he root for the Knicks; parade-goers dressed as Elmo, and he pivoted to backing Team USA at the World Cup to dodge more heat.',
+                briefStarter: 'Neutrality reads as a dodge to a fired-up fanbase. When your brand or mascot wades into a tribal cultural moment, "we love everyone" can land worse than picking a side — audiences hold expectations even of fictional characters. Read whether your community wants you to commit or stay Switzerland, and if you commit, commit to the hometown.',
+            },
+            'jul-26-internet': {
+                signal: 'The search bar is dying because people stopped thinking in keywords — they think in questions.',
+                play: 'Search used to be a skill: trim the sentence, add quotes, try spellings, open six tabs. Now people start conversations instead — less concerned with how to ask, more with what they want to know. The bar isn\'t obsolete; keyword-thinking is.',
+                briefStarter: 'Audit every place you make users translate a messy human thought into your syntax — search fields, filters, forms, menus. The interfaces winning now accept complete, imperfectly-worded questions and answer the intent, not the keywords. For brand discovery: optimize for how people actually phrase a half-formed need out loud, not the tidy query they used to construct.',
+            },
+            'jul-26-mantras': {
+                signal: 'When reach is commoditized, goodwill is the last scarce thing — and extraction has a ceiling: the boo.',
+                play: 'FIFA\'s "hydration breaks" were sold as player welfare, then monetized as ad inventory; Fox cut to full-screen commercials and returned late to the USA game. Capitalism\'s reflex is to find what fans love and sell the seam inside it — until fans boo.',
+                briefStarter: 'Audit where you\'re subdividing a beloved experience into something buyable — the mid-roll, the sponsored post, the hydration break. Each seam you sell spends goodwill, now the scarcest asset, and extraction has a ceiling (the boo). Invest in the thing audiences would genuinely miss if it vanished; that\'s the only moat left when reach is cheap and guaranteed.',
+            },
+            'jul-26-ads': {
+                signal: 'The best print ads still win the double-take — one clean line, one image, zero media budget.',
+                play: 'A roundup of ads that punch above their spend: Scrabble ("the only time you\'ll be delighted to get syphilis"), Chipotle ("usually when you roll something this good, it\'s illegal"), and McDonald\'s — proof a sharp headline and a single visual still beat production volume.',
+                briefStarter: 'Before greenlighting another high-production hero film, ask if your idea survives as a single frame and one line. The ads that travel are built on a tight, surprising thought — not budget. Draft your concept as a print ad first; if it doesn\'t earn the double-take on paper, more production won\'t save it.',
+            },
+            'jul-26-ai': {
+                signal: 'Reasoning models are getting efficient by thinking in shorthand — and we\'re losing the ability to read how they think just as we hand them real spend.',
+                play: 'OpenAI shrinks reasoning tokens to near-illegible shorthand (one leaked thought: "try."); Anthropic still reasons in full sentences; GLM-5.2 debates itself. As agentic buying scales across platforms, "trust the AI" quietly becomes "trust that someone, somewhere, can explain the AI."',
+                briefStarter: 'Before handing agents real campaign budget, treat explainability as a hard requirement, not a nice-to-have. A reasoning summary is a recap, not the thinking — so wrap any agentic buying in human-readable audit trails, spend guardrails, and a kill-switch. The efficiency gains are real, but if no one can explain why an agent torched a budget, that\'s an accountability gap, not just a technical one.',
+            },
             // --- JUNE 2026 ---
             'jun-26-vibe': {
                 signal: 'Segment names flatten people. Identity is a timeline.',
@@ -733,6 +831,409 @@
 
         // All features across all issues
         const FEATURES = [
+            // --- JULY 2026 ---
+            {
+                id: 'jul-26-finance',
+                columnId: 'finance-flair',
+                issueId: '2026-07',
+                title: 'Why the best portfolios start on a bookshelf',
+                description: `Hello, my name is Ali, and I am a book hoarder.
+
+If you spend any time in social reading communities like BookTok, you've seen the memes about the playful struggle between physical book hauls and personal finance. I've been fully sucked in — even buying duplicate copies of beloved books so I have a pristine, sprayed-edge copy for my shelf as art, and a paperback copy to actually read and lend.
+
+Growing up, I was a closet reader, fearing a loss of social status. Today, reading is vibrant, social, and everywhere. I recently joined an in-person book club, and our monthly meetings inevitably turn into lively brunches, lunches, and dinners. As we fuel our literary passions, we are also actively fueling our local economies — please take my money, local bookstores!
+
+This reading renaissance has revealed a surprising truth: books and finance have more in common than we think. Both reward patience, consistency, and delayed gratification. Reading just 20 pages a day is the intellectual equivalent of dollar-cost averaging; you are quietly compounding knowledge.
+
+In fact, your bookshelf is a literal balance sheet:
+
+- **Fiction** represents empathy assets
+- **History** provides vital market context
+- **Biographies** build leadership capital
+- **Finance books** are your liquid assets
+
+A diversified bookshelf builds a resilient thinker, just as a diversified portfolio helps weather economic uncertainty. Even the viral nature of BookTok mirrors a financial bull market, proving that shared community enthusiasm has become a powerful form of modern capital.
+
+I dream of my future in-home library. But until then, I've realized that some of the best investments don't trade on an exchange. The most valuable portfolio you can build starts right on your bookshelf.`,
+                media: [
+                    { url: 'https://i.imgur.com/Yx8pGfL.png', type: 'image', alt: 'Why the Best Portfolios Start on a Bookshelf - Preview', pos: 'object-top' },
+                    { url: 'https://i.imgur.com/Yx8pGfL.png', type: 'image', alt: 'Why the Best Portfolios Start on a Bookshelf - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-youth',
+                columnId: 'youth-dept',
+                issueId: '2026-07',
+                title: 'IS BREAKING THE RULES THE ONLY WAY TO WIN?',
+                description: `Dear Marketing,
+
+You promised brand guidelines ensured protection. You said policing consistency built differentiation, commanded esteem, and defended equity you'd spent decades accumulating.
+
+Then you promised young talent paying their dues would pay dividends. You said institutional proximity built judgment, that the ladder existed for a reason, and that earning your shot was how the industry reproduced its best work.
+
+The market has rendered its verdict on both.
+
+**From Brand Guidelines to Playcodes**
+
+The most protected IP on earth just blinked. On a recent earnings call, Bob Iger confirmed Disney is in talks with AI companies about tools that let subscribers generate and share their own video content built from Disney-owned stories. This isn't a pivot to chaos — it's a calculated read on where cultural participation is heading. If Disney is opening the gates, the ground has officially shifted.
+
+Gen Z & Alpha were never going to be passive consumers. They've spent their entire lives curating personal brands, remixing culture, and building identity through creative expression — and in a content-rich but conversation-poor world, access and decision rights are underused levers in marketing. The brands winning with this generation are functioning less like advertisers and more like studios designing worlds to build inside.
+
+Brand guidelines were always a defensive posture — protecting the asset from dilution. PLAYCODES define the rules of a universe and invite people inside it. One locks the door. The other hands out keys.
+
+**From Agency Interns to Direct-to-Brand**
+
+Gen Z can't afford to wait for a stable job market to give them permission. So they're skipping the queue entirely. By 2027, half of workers in developed economies will be freelancers or gig workers. 89% of Gen Z already identify as creators. The traditional on-ramp — intern, junior, mid-level, maybe-someday-senior — was built for a different economy and a different pace of culture.
+
+Asher Hyde is a clear example of what comes next. At 20, he's producing speculative campaigns, cinematic concept worlds, and culturally timed visual storytelling for brands like Nike — without waiting for an agency to hand him the brief. As Deeds Magazine wrote, he's blurred the line between fandom, art direction, and the future of creative culture. He didn't pitch an internship. He built a body of work that made the conversation inevitable.
+
+DTB (Direct to Brand) flips the traditional career logic. You don't earn relevance through years of institutional proximity. You demonstrate it first, and the institution finds you. AI-natives are dramatically compressing the gap between concept and execution.
+
+In an industry restructuring in real time, the career ladder is structurally compromised, if even at all recognizable.
+
+**Steal This for Your Brief**
+
+Rewrite one section of your brand guidelines as Playcodes. Define what people can build with your IP, what remixes you want to exist, and what a fan-made world inside your universe actually looks like.
+
+If Disney is willing to play with its century+ of legendary IP, your brand has no excuse.`,
+                media: [
+                    { url: 'https://i.imgur.com/wW45piR.png', type: 'image', alt: 'Is Breaking the Rules the Only Way to Win - Preview', pos: 'object-top' },
+                    { url: 'https://i.imgur.com/wW45piR.png', type: 'image', alt: 'Is Breaking the Rules the Only Way to Win - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-extra',
+                columnId: 'extraordinary',
+                issueId: '2026-07',
+                title: 'How a 40p plastic bag helped build a billion-dollar company',
+                description: `You can't miss it, at every school gate in Britain: the JD bag, yellow and black, carried empty. Not a holdall — the carrier bag the trainers/sneakers came in. It's a membership card to some, fancy dress to others. The bag doesn't adjudicate. Both camps are reaching for the same thing — in, not rich. A £200 jacket ranks you. A free bag includes you.
+
+Nobody briefed this. JD didn't design an icon; they designed a shopping bag. The culture did the rest — kids *earned* its meaning, *owned* it as an artefact, *shared* it across playgrounds and feeds. The yellow bag was a fully-functioning media channel for two decades before a single pound of paid touched it.
+
+Paid came last. The 2023 *Forever Forward* ad — Central Cee, Kano, Sweet Harmony — didn't build the meaning. It bought a ticket to it.
+
+That's the order value actually accrues: earned, owned, shared, then paid. Most brands run the sequence backwards and wonder why the culture never shows up.`,
+                media: [
+                    { url: 'https://i.imgur.com/FbJvbyV.png', type: 'image', alt: 'How a 40p Plastic Bag Helped Build a Billion-Dollar Company - Preview' },
+                    { url: 'https://i.imgur.com/FbJvbyV.png', type: 'image', alt: 'How a 40p Plastic Bag Helped Build a Billion-Dollar Company - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-gameboy',
+                columnId: 'gameboy',
+                issueId: '2026-07',
+                title: 'The Biggest Game Ever Made Will Come in an Empty Box',
+                description: `On November 19, Grand Theft Auto VI will be the biggest entertainment launch of any kind, not just the biggest game. [It made an estimated billion dollars in the first hour of pre-orders](https://www.mensjournal.com/entertainment/gta-6-made-an-eye-popping-amount-of-money-in-just-one-hour), before anyone has played a second of it.
+
+Almost everything about it should give a buyer pause. [The base game is $80, or $100 for the full version.](https://www.businesswire.com/news/home/20260624539426/en/Rockstar-Games-Announces-Pre-Orders-for-Grand-Theft-Auto-VI) You preorder a file you cannot download for months. [And for the first time, there is no disc in the box.](https://www.hollywoodreporter.com/business/business-news/grand-theft-auto-vi-digital-only-no-disc-rip-physical-media-1236629695/) None of it slows the wave. Rival studios are clearing the fall calendar rather than face it. When a game gets this big, it can break rules that would sink anyone else.
+
+Take the [vanished disc](https://www.reddit.com/r/gaming/comments/1uh3xw3/thr_there_are_no_plans_for_grand_theft_auto_vi/), the easiest detail to wave off as convenience. It is the one that actually matters. Gone with it is the right to lend, trade, or resell the thing you bought. A rule that held for decades quietly stopped applying, and the line out the door did not get shorter.
+
+The same scale is doing something else worth watching, especially if you run a brand that has never gone near gaming. A moment this big does not stay inside the game, and it does not need to. Rockstar sells no space in its world, so the way in was never the game itself. It is everything around it, the talent, the creators, the conversation, and that is wide open. For years, brands treated GTA as too risky to touch. GTA 6 will be where a lot of them learn the real risk was never the game. It was sitting it out.`,
+                media: [
+                    { url: 'https://i.imgur.com/jyczAO0.png', type: 'image', alt: 'The Biggest Game Ever Made Will Come in an Empty Box - Preview', pos: 'object-top' },
+                    { url: 'https://i.imgur.com/jyczAO0.png', type: 'image', alt: 'The Biggest Game Ever Made Will Come in an Empty Box - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-algo',
+                columnId: 'algo',
+                issueId: '2026-07',
+                title: 'America shocked by: the rest of the world & vice versa',
+                description: `We can thank the world cup for bringing light to the US on the cultural nuance and pastimes of Europe & other countries. We can also thank the world cup for introducing America to many who had never been before.
+
+The stage for this war of culture shocks? Social. From the Scots [drinking boston dry](https://www.espn.co.uk/football/story/_/id/49096272/scotland-fans-drink-boston-dry-local-bars-run-beer-world-cup), to the world's [discovery of Ranch dressing](https://edition.cnn.com/sport/ranch-dressing-world-cup-tourists-trend-hnk-spc), to the Brits taking ['freedom of speech' to the absolute max](https://www.mirror.co.uk/news/us-news/donald-trumps-terror-world-cup-37326982) — nothing is off limits.
+
+Hilariously, the chants at each game have been making headlines; where in some cases, fans are utilising chants to… provide [messages of optimistic support to their team](https://www.independent.co.uk/sport/football/world-cup/world-cup-2026-us-fan-chants-football-b2997628.html) (much to the surprise of many brits). Adjacently reminds me of [Logan Paul at London WWE](https://www.tiktok.com/@irish.wwe.views_halpojr/video/7654352845432687874) failing to get the crowd on his side.
+
+But traversely, the rest of the world has been introduced to what [makes up life in America](https://www.reddit.com/r/SipsTea/comments/1uaymyx/european_world_cup_fans_experience_culture_shock/): the consumerism mindset of what's on offer [at Walmart](https://www.tiktok.com/@lisandru_susini/video/7650915415186607393), Chick-Fil-A and unlimited [soda refills](https://www.tiktok.com/@millionaire_server_club/video/7653868096322686222?q=unlimited%20refill%20world%20cup&t=1782824826426). Whilst American culture may span so much more, these are the conversations that are gaining traction.
+
+What has been beautiful to watch is [the American hospitality](https://creators.yahoo.com/lifestyle/story/world-cup-fans-didnt-expect-this-kind-of-american-hospitality--and-they-cant-stop-posting-about-it-224645573.html) that doesn't come as naturally to Europeans when face to face;
+
+> "Someone said the World Cup is just America having a giant sleepover with the cousins we never get to see because our parents hate each other."`,
+                media: [
+                    { url: 'https://i.imgur.com/Ahtk1dl.png', type: 'image', alt: 'America Shocked By The Rest of the World - Preview' },
+                    { url: 'https://i.imgur.com/Ahtk1dl.png', type: 'image', alt: 'America Shocked By The Rest of the World - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-theta',
+                columnId: 'theta',
+                issueId: '2026-07',
+                title: 'BETTING THE EDGE INSTEAD OF THE FARM',
+                description: `Kelly is an answer to one question.
+
+You have an edge. How much do you bet? Not *should* you bet. The edge is real. The question is the size.
+
+Imagine a coin rigged in your favor. Heads 60% of the time, forever. Bet nothing and you leave money on the table. Bet everything and a few unlucky tails wipe you out before the edge pays you back.
+
+Kelly is the formula for the size in between. Match the bet to the edge. Small, shaky edge — small bet. Big, reliable edge — bigger bet. Never bet so much that a normal run of bad luck takes you out of the game. You can't win a game you've been forced to leave.
+
+A farmer with a sack of seed. Plant too little and the field underproduces. Plant the whole sack and one drought ends the farm. Kelly tells the farmer how much to plant and how much to keep.
+
+Two ways to get it wrong, on opposite ends.
+
+Too timid, and your money grows painfully slowly. Too aggressive, and you hit ruin. The polite word for broke. Kelly finds the spot in between.
+
+One last thing the pros know. Real life isn't a rigged coin. So they bet half of what Kelly suggests. The math assumes you know your edge. Humility says you don't.
+
+**Real World Kelly Situations**
+
+1. How much to put in the 401(k) match.
+2. How much to push for in a salary negotiation.
+3. How much truth a relationship can hold.
+4. How much sleep to sacrifice for a deadline.
+5. How much to push back in a meeting.`,
+                media: [
+                    { url: 'https://i.imgur.com/ueo81nM.png', type: 'image', alt: 'Betting the Edge Instead of the Farm - Preview' },
+                    { url: 'https://i.imgur.com/ueo81nM.png', type: 'image', alt: 'Betting the Edge Instead of the Farm - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-pyramid',
+                columnId: 'pyramid',
+                issueId: '2026-07',
+                title: 'Find your own bandwagon',
+                description: `Between the Knicks' Finals run and the World Cup, sports culture is the loudest it's been and every brand wants a piece of it. While athletic brands like Nike and Adidas continue to invest in cinematic, feature-length campaigns, others are finding more unexpected ways into the moment. The brands standing out aren't simply reacting to culture; they're contributing to it.
+
+When Levi's logo had to be covered during the World Cup to comply with FIFA's neutrality rules, the brand didn't treat it as a setback. Instead, it embraced the moment and used its unmistakable logo to play into the cover-up itself. The idea worked because it wasn't forcing relevance, it amplified something people were already talking about. Unsurprisingly, copycat versions quickly followed, but most missed what made the original so effective.
+
+A similar thing happened when a fan knocked a letter off a Convene storefront sign during the NYC Knicks Parade. Rather than correcting it or ignoring it, the brand quickly updated its social channels to playfully acknowledge the accident. Another example of a brand authentically extending a cultural moment instead of trying to commandeer one that wasn't theirs.
+
+Of course, brands don't always have to wait for culture to find them. DoorDash took the opposite approach, intentionally manufacturing a moment by repeatedly tagging T-Pain instead of soccer player Tim Payne during a match. Was it driven organically by fan culture? Not really. But it successfully created a conversation that fans and T-Pain participated in.
+
+Whether reacting to an unexpected moment or creating one from scratch, the brands that leave a lasting impression are the ones that add something new to the conversation. Don't wait for the safe opportunity everyone else is chasing. Contribute to culture, or better yet, create a moment everyone else wants to join.`,
+                media: [
+                    { url: 'https://i.imgur.com/X8PSxLj.png', type: 'image', alt: 'Find Your Own Bandwagon - Preview', pos: 'object-top' },
+                    { url: 'https://i.imgur.com/X8PSxLj.png', type: 'image', alt: 'Find Your Own Bandwagon - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-dataviz',
+                columnId: 'dataviz',
+                issueId: '2026-07',
+                title: 'The World Cup without words',
+                description: `This month, our feeds were graced with bright data visualizations of World Cup matches.
+
+For the past four World Cups, designer Zeh Fernandes has been experimenting with ways to tell the story of each unique match through visual design. This year's graphics translate time, goals, attempts, cards, and the "drama" level over the course of a match into a 2D grid of noise and gravity.
+
+Fernandes explains their full methodology in a [blog post](https://zehfernandes.com/posts/how-i-turned-world-cup-data-into-posters), but the TL;DR is that each match metric tweaks a different aspect of the visual, resulting in an image that is a pure representation of the gameplay, no numbers or words needed.
+
+Scroll through the full collection and past years' iterations at [gencup.art](https://www.gencup.art/).`,
+                media: [
+                    { url: 'https://i.imgur.com/8AZ36ol.png', type: 'image', alt: 'The World Cup Without Words - Preview' },
+                    { url: 'https://i.imgur.com/8AZ36ol.png', type: 'image', alt: 'The World Cup Without Words - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-sustain',
+                columnId: 'sustainably',
+                issueId: '2026-07',
+                title: 'Climate Dispatch from Cannes',
+                description: `While many advertisers touted their AI-powered solutions and campaigns over a glass of rosé, sustainability leaders flooded the palais with activism, action, and calls for accountability.
+
+Some noteworthy initiatives below:
+
+- **Clean Creatives** held interactive workshops, like Unpitch Fossil Fuels, to imagine an advertising world without fossil fuels ([Clean Creatives](https://luma.com/5p9z1ejk))
+- **Creatives for Climate** debuted their "GreenSHOUTING" Guide to help creative teams communicate sustainability progress with confidence ([Creatives for Climate](https://www.creativesforclimate.co/greenshouting))
+- **ACT Responsible** recognized six "Champions of Good": figures in the industry committed to making our world more inclusive, sustainable and equitable ([ACT](https://www.linkedin.com/posts/act-responsible_actchampionsofgood-advertisingcommunitytogether-activity-7476242493362122753-tKCR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAASxgRsBdeUbVOKL3QHRTm3wDCIZox2Q5dk))
+- **The Conscious Advertising Network** (CAN) held panels throughout the week, challenging the status quo of the industry and imagining what a more responsible communications economy looks like ([CAN](https://www.consciousadnetwork.com/can-guiding-principles/))
+- Journalists **Ellen Ormesher** and **Emily Gertz** investigated the legitimacy of claims made by winners of the SDG (Sustainable Development Goals) Lions ([DeSmog](https://www.desmog.com/2026/06/19/the-oscars-of-advertising-has-a-cheating-problem/))
+
+Join Creatives for Climate and/or sign the Clean Creatives pledge.`,
+                media: [
+                    { url: 'https://i.imgur.com/4XVt7eP.png', type: 'image', alt: 'Climate Dispatch from Cannes - Preview', pos: 'object-top' },
+                    { url: 'https://i.imgur.com/4XVt7eP.png', type: 'image', alt: 'Climate Dispatch from Cannes - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-vibe',
+                columnId: 'vibe-shift',
+                issueId: '2026-07',
+                title: 'Constraint Creates Creativity',
+                description: `Do you know how hard it was to not write about the Knicks this month?!?! Like many NYers, I have peaked with the NYK winning their championship *and* I'm ok with that. So instead, let's talk about what I will try to do now — **constraint**.
+
+[Christopher Nolan told the New York Times this week](https://www.nytimes.com/2026/06/25/arts/christopher-nolan-odyssey-imax.html) that he doesn't see creative risk the way most people do. "The biggest risk of all is to play it safe," he said, and his body of work backs it up completely. His long standing love affair with practical effects over CGI has aged well culturally (and literally) because it turns out filming real things in-camera still looks like real things in-camera year after year. Filming The Odyssey *entirely* in IMAX required engineers to invent a mini-blimp system just to move the camera, and actors had to use mirrors to see each other around the equipment. Sounds difficult, but this is now the first commercial feature to be entirely shot on IMAX. Go back further and this has powered some of the most iconic cultural moments in film. It's why Saving Private Ryan (1998) and 2001: A Space Odyssey (1968) look like they were made today while any of the Spider-Man movies visually age poorly.
+
+While most of this is intentional, **constraints often aren't chosen**…the plan for Jaws was to show the shark, but [it broke constantly](https://thedailyjaws.com/blog/jaws-shark-not-working-made-it-a-scarier-film-says-steven-spielberg), forcing Spielberg to figure out a movie with almost no shark in it. What felt like a production disaster became the film's competitive advantage *and* it paid off by delivering on a universal truth. It turns out our imagination, running on pure dread and negative space, produces something no practical effect could have matched. The constraint powered the success.
+
+**Sometimes constraint is chosen —** we all have brands with tiny budgets that folks complain that they can't do anything creative with. Does that claim actually hold up in real life? A24 built one of the most distinctively positioned studios in modern film not by scaling up but by staying small, backing niche aesthetics at price points that demand genuine creative problem-solving from their collaborators. The result is a slate that looks like nothing else, backed by demand and easier paths to profit than blockbusters. Compare that to franchises with bottomless budgets and no real creative pressure designed to appease the masses…they offend no one and move no one. LLM-generated perspectives are doing the same thing in real time: infinite capacity and production trained toward the average, defaulting to the most frictionless version of every answer until asked.
+
+**If you value brand equity, learn from** [some of the richest in brand health](https://www.kantar.com/campaigns/brandz/global). Apple has earned its place in a space that Big Tech has historically sullied: Film and TV. The safe path would've been through quantity backed by bottomless budgets, but they have chosen **quality** — completely credible given their history **— and want credit for it**: [a new human-made logo for Apple TV](https://www.youtube.com/watch?v=V95nfAEXlZ4), hand-crafted and deliberately promoted through BTS content, and a content slate that greenlights series and movies emphasizing experience and quality over volume. They have now earned the golden perception any entertainment brand would envy: [HBO-level prestige](https://www.theverge.com/column/948295/apple-tv-new-hbo) in a fraction of the time, embraced by the many in an entirely new category. **Constraint powered this via human craft, selective production, quality over quantity.**
+
+Our beloved NY Knick aka my breakfast sandwich aka my father Jalen Brunson is **6'1" in a league of giants** (ok I failed on constraint) and **he's had to solve that problem creatively every time he steps on the floor**. The footwork, the angles, the contact-drawing geometry of his game couldn't exist without the constraint that produced it. It served him well in creating un-templated success (aka **differentiating himself to victory: a practical creative response to a real problem**).
+
+If by the end of this piece you're feeling that I'm saying that one should simply "be creative" when faced with a problem…not necessarily. **It's a vibe shift: embrace those constraints as opportunities *Tony Robbins voice* or create constraints yourself**. For brands and creators navigating a world of algorithmic sameness, the instinct to create shit that most people would enjoy is understandable because it's easier to sell. But **playing it safe isn't just boring, it's risky — because anything that's worth an algorithm's push or a human's time is earned by influence that is earned by taste, authenticity, lived perspectives and intentional, delightful friction**. The sandbox that looks too small to play in is usually the one worth playing in. See you next shift!`,
+                media: [
+                    { url: 'https://i.imgur.com/tBZsWlK.png', type: 'image', alt: 'Constraint Creates Creativity - Preview' },
+                    { url: 'https://i.imgur.com/tBZsWlK.png', type: 'image', alt: 'Constraint Creates Creativity - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-influence',
+                columnId: 'influence',
+                issueId: '2026-07',
+                title: 'Add to Cart: Medicube edition',
+                description: `We've already established that I'm a sucker for anything I see on TikTok or in an IG story from one of the *many* NYC influencers (*Halley Kate Core*). So, let me introduce you to **Medicube** if you haven't crossed over to this side of the internet yet. Medicube is a clinical Korean skincare brand that bridges the gap between at-home skincare and professional dermatology. While consumers can buy direct, the company also operates an official storefront on Amazon (Prime, pls).
+
+I'm the first to admit that I LOVE my Dr. Dennis Gross Daily Peels—but after using them every day, the $94 price point was becoming a bit too much stacked up against the rest of my routine. During the last Prime Day, I pulled the trigger and loaded up my cart with all things Medicube just to try. Here's my hot take:
+
+🏆 **Wins** 🏆
+
+- **Pore Pads:** These are the reason I ordered from the brand to begin with. While I like them, I personally LOVE the Deep Vita C Pad version even better.
+- **Collagen Night Wrapping Mask:** THIS! I sleep with this overnight, peel it off in a sheet in the morning, and my skin feels glowy, tight, and SO refreshed.
+
+🙅 **Swing and a miss** 🙅
+
+- **Pink Peptide Eye Cream:** I really loved this and used it consistently until I ran out, but I've found I love the Beauty of Joseon Revive Eye Serum WAY better. (Pro tip: for better results, layer it with reusable gel eye patches.)
+- **Pink Peptide Serum:** Eh, I've been using this for a while and cannot really confirm a difference. I'd pass.
+
+Is it the best skincare I've ever used? No. Is it easily accessible and affordable? Yes.
+
+Would I influence you to try it? 100%.`,
+                media: [
+                    { url: 'https://i.imgur.com/Sd3cH1V.png', type: 'image', alt: 'Add to Cart: Medicube edition - Preview' },
+                    { url: 'https://i.imgur.com/Sd3cH1V.png', type: 'image', alt: 'Add to Cart: Medicube edition - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-meme',
+                columnId: 'meme',
+                issueId: '2026-07',
+                title: 'Transcending the Game 🏀 ⚽',
+                description: `June has been a massive month for sports… and the internet is loving it.
+
+From the NBA Finals to the World Cup, players, celebrities, and brands all joined the conversation and brought their A game with some top tier social content.
+
+This month we're skipping the "stale" and "rotten" ratings, everything is certified fresh.`,
+                media: [
+                    { url: 'https://i.imgur.com/YEiAhrh.png', type: 'image', alt: 'Transcending the Game - Preview', pos: 'object-top' },
+                    { url: 'https://i.imgur.com/YEiAhrh.png', type: 'image', alt: 'Transcending the Game - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-anon',
+                columnId: 'anon',
+                issueId: '2026-07',
+                title: 'Meg Stalter: The Prettiest Girl in America and this Summer\'s Pop Icon',
+                description: `No one commits to the bit quite like Meg Stalter. After a breakout run on *Hacks*, Stalter met the end of the series by reinventing herself as America's newest pop princess. But this isn't mere parody; she is using her devotion to the persona to dismantle the manufactured nature of modern celebrity. By pairing sharp satire with genuinely addictive club tracks, Stalter proves she can mock the pop machinery while simultaneously conquering it.
+
+Stalter's pop career kicked off when she secretly set up her own lookalike contest that morphed into a surprise listening party for her fans. She then brought that energy to the stage at WeHo Pride and at the Las Culturistas Culture Awards, delivering a performance complete with backup dancers and choreography. With tracks like "Prettiest Girl in America" and "Gay," Stalter undercuts the hyper-polished, perfectly curated aesthetics of today's music landscape.
+
+Through this unwavering commitment, Stalter exposes how much of the music industry relies on branding, high-tier production, and blind confidence rather than substance. She is brilliantly satirizing our cultural obsession with fame, proving that the ultimate way to expose the absurdity of stardom is to become its most magnificently delusional creation.`,
+                media: [
+                    { url: 'https://i.imgur.com/rHg9eBA.png', type: 'image', alt: 'Meg Stalter Prettiest Girl in America - Preview', pos: 'object-top' },
+                    { url: 'https://i.imgur.com/rHg9eBA.png', type: 'image', alt: 'Meg Stalter Prettiest Girl in America - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-sleeping',
+                columnId: 'sleeping',
+                issueId: '2026-07',
+                title: 'OWL HOOTENANNY KEPT ME UP AT NIGHT',
+                description: `Did you read this month's column title and think, "Alec, what drugs are you on?"
+
+Hear me out.
+
+I live in Northern California, pretty removed from the city, and we get quite a bit of wildlife. For the past few weeks, there have been two owls going at it in the evergreen trees outside my home and at first, it REALLY annoyed me. The gall of these birds to yap into the wee hours of the night out in nature (sarcasm). Even with the windows closed, their "HOO-HOOs" would resonate through the walls.
+
+But after a few minutes, my annoyance was replaced with curiosity. I NEEDED to find out the species responsible for the ruckus.
+
+So, while you were sleeping, I found an app called Merlin Bird ID. It's essentially a bird Shazam, brought to you by the Cornell Lab of Ornithology. I recorded the owls and behold, I had a pair of Great Horned Owls on my hand. Fun fact: that iconic "Hoo-Hoo" hoot you hear in movies is brought to you by the Great Horned Owl. Put that on a Snapple.
+
+Suddenly I found myself on a bird identification scavenger hunt, which I promptly resumed in the morning because sleep is important. As if it was fate, there was a Red-shouldered Hawk (thanks Merlin) circling outside as I ate breakfast. The crazy thing landed on my fence, staring right at me (pictured). Two weeks later, the bird identification has kept going — I've gotten at least 50 species documented now.
+
+**And that's the thing about curiosity — it's a gateway drug.** One minute you're cursing a pair of yappy birds, the next you're eating cereal staring eye-to-eye with a hawk, feeling like National Geographic's newest field correspondent. We don't need to wait until Earth Day on April 22nd to start appreciating the wild spaces we share. It turns out the world is full of incredible things if you stop being annoyed long enough to look (or listen).`,
+                media: [
+                    { url: 'https://i.imgur.com/djjx3If.png', type: 'image', alt: 'Owl Hootenanny Kept Me Up at Night - Preview' },
+                    { url: 'https://i.imgur.com/djjx3If.png', type: 'image', alt: 'Owl Hootenanny Kept Me Up at Night - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-sports',
+                columnId: 'sports',
+                issueId: '2026-07',
+                title: 'Elmo in hot water with NYers',
+                description: `June had a lot of sports stuff going on, but there was no way this wasn't going to be Knicks related. The one thing that broke through more than anything was New Yorkers raging at Elmo. Before the NBA Finals Elmo innocently tweeted out that he hopes both teams have fun. But New Yorkers were not having it. The tweet garnered 28M+ views with many responses making it clear that Elmo better be rooting for his hometown Knicks.
+
+After the finals the moment kept going. People went to the Knicks victory parade dressed as Elmo. Elmo later made it clear that he wanted the US to win in the World Cup, hoping to avoid more push back from vocal sports fans. Elmo asked people not make this a thing going forward, but sorry Elmo it's already a thing. Even for fictional characters consumers have expectations and going against can cause some trouble.`,
+                media: [
+                    { url: 'https://i.imgur.com/4xcfQ5Z.png', type: 'image', alt: 'Elmo in Hot Water with NYers - Preview', pos: 'object-top' },
+                    { url: 'https://i.imgur.com/4xcfQ5Z.png', type: 'image', alt: 'Elmo in Hot Water with NYers - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-internet',
+                columnId: 'internet-dates',
+                issueId: '2026-07',
+                title: 'The Death of the Search Bar',
+                description: `There was a time when using the internet meant learning how to ask the right question.
+
+You'd trim your sentence. Add quotation marks. Use keywords. Try a different spelling. Open six tabs — maybe even private mode — because none of them quite answered what you meant.
+
+Searching was a skill.
+
+But now, instead of searching, people are starting conversations.
+
+People are becoming less concerned with **how** to ask and more concerned with **what** they actually want to know. Instead of constructing the perfect search, they're asking complete questions.
+
+The search bar isn't disappearing because people don't need information anymore.
+
+It's disappearing because people don't naturally think in keywords. They think in ideas, half-finished thoughts, and questions that don't have perfect wording.`,
+                media: [
+                    { url: 'https://i.imgur.com/5qmWayJ.png', type: 'image', alt: 'The Death of the Search Bar - Preview' },
+                    { url: 'https://i.imgur.com/5qmWayJ.png', type: 'image', alt: 'The Death of the Search Bar - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-mantras',
+                columnId: 'mantras',
+                issueId: '2026-07',
+                title: 'Build the Thing We\'ll Miss',
+                description: `When FIFA gave every #WorldCup match a "hydration break"...we knew. In Dallas, when England fans booed so loud the stadium drowned them out with Mr. Brightside...we knew. When Fox cut to full-screen commercials and came back late to the USA game...we knew.
+
+It was sold as player welfare, and then the ad rights got greenlit. They didn't add a chance for players to hydrate — they added inventory for networks to wet their beak.
+
+But the hydration break is just this month's example. Capitalism's reflex is to find the thing people love and sell the seam inside it. The podcast gets a mid-roll. The feed gets a sponsored post. The match gets a hydration break. Every experience fans care about eventually gets subdivided into something buyable.
+
+When reach is commoditized — guaranteed, cheap, served — goodwill is the last scarce thing. And extraction has a ceiling: the boo.
+
+Build the thing we'll miss. Everything else is just selling seams until fans tune out.`,
+                media: [
+                    { url: 'https://i.postimg.cc/tgxS7h1s/giphy.gif', type: 'image', alt: 'Build the Thing We\'ll Miss - Preview' },
+                    { url: 'https://i.postimg.cc/tgxS7h1s/giphy.gif', type: 'image', alt: 'Build the Thing We\'ll Miss - Collage' },
+                ],
+            },
+            {
+                id: 'jul-26-ads',
+                columnId: 'good-ads',
+                issueId: '2026-07',
+                title: 'Good F*cking Ads',
+                description: ``,
+                media: [
+                    { url: 'https://i.imgur.com/5ucRwpi.png', type: 'image', alt: 'Good F*cking Ads - Preview' },
+                    { url: 'https://i.imgur.com/PnxCuLc.png', type: 'image', alt: 'Scrabble ad' },
+                    { url: 'https://i.imgur.com/0L1jft2.png', type: 'image', alt: 'McDonald\'s ad' },
+                    { url: 'https://i.imgur.com/5ucRwpi.png', type: 'image', alt: 'Chipotle ad' },
+                ],
+            },
+            {
+                id: 'jul-26-ai',
+                columnId: 'ai',
+                issueId: '2026-07',
+                title: 'When Reasoning Gets Too Short to Read',
+                description: `I watched a Theo video this week called "[Why is OpenAI so much more efficient?](https://www.youtube.com/watch?v=ypO0q_8zhWw)" and the answer is a solution labs have been toying with for a while now. It isn't a smarter algorithm, but rather simply thinking in shorthand. Reasoning models generate "reasoning" tokens before they answer, and OpenAI pushed that thinking to be as short as possible, cutting grammar, words, even vowels, since you only ever see the final answer. One leaked thought was just the word "try" with a period. Producing fewer reasoning tokens is playing a huge part in how efficient these models have become.
+
+This is one of many approaches to reasoning. Anthropic still reasons in full English sentences. GLM-5.2 thinks out loud in long, looping debates with itself, "wait, I think it's this, on second thought it could be this, no wait, it's this," which balloons its token count. OpenAI went the other way entirely. So what happens for us and our clients when reasoning is harder to follow?
+
+I'm an evangelist for efficient models. What worries me is that we're losing the ability to understand how they think, right as we start letting them make decisions for us. Agentic buying is an ever growing topic across WPP Open — [see our recent deal with Meta](https://www.wpp.com/en/news/wpp-named-first-launch-partner-to-pilot-metas-newest-creative-solution-integrated-within-wpp-open). Are we about to start handing agents real campaign spend as the frontier models' reasoning gets harder to read?
+
+[OpenAI isn't naive here](https://developers.openai.com/api/docs/guides/reasoning). Ahead of the EU AI Act's August deadline they offer reasoning summaries and encrypted traces they can unlock for regulators. But a summary is a recap, not the thinking itself. So when an agent torches a budget, "trust the AI" quietly becomes "trust that someone, somewhere, can explain the AI." Right now, no one can promise that.`,
+                media: [
+                    { url: 'https://i.imgur.com/VZVpPjS.png', type: 'image', alt: 'When Reasoning Gets Too Short to Read - Preview', pos: 'object-top' },
+                    { url: 'https://i.imgur.com/VZVpPjS.png', type: 'image', alt: 'When Reasoning Gets Too Short to Read - Collage' },
+                ],
+            },
             // --- JUNE 2026 ---
             {
                 id: 'jun-26-vibe',
@@ -2515,7 +3016,7 @@ Rotten: "My show is on"`,
                 <div className="relative w-full overflow-hidden min-h-[60vh] md:min-h-[72vh] flex flex-col justify-center">
                     <div className="absolute inset-0 z-0">
                         <img
-                            src="https://i.postimg.cc/Z5GHXSvw/giphy-1.gif"
+                            src="https://i.postimg.cc/4dD3Cmys/Adam-Hashemi-First-Person.gif"
                             alt=""
                             className="w-full h-full object-cover opacity-75"
                         />
@@ -2586,7 +3087,7 @@ Rotten: "My show is on"`,
                     <div className="article-card-img-wrap aspect-[16/10] overflow-hidden bg-gray-100 flex items-center justify-center transition-all duration-500 rounded-sm">
                         <img src={feature.media[0].url} alt={feature.title} className={`w-full h-full object-cover ${feature.media[0].pos || 'object-center'} grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 scale-[0.75] group-hover:scale-[0.8]`} />
                     </div>
-                    <h3 className="article-card-title group-hover:underline">{feature.title}</h3>
+                    {feature.title && feature.title !== column.name && <h3 className="article-card-title group-hover:underline">{feature.title}</h3>}
                     {feature.description && <p className="mt-3 text-lg text-gray-500 line-clamp-3 leading-relaxed">{stripMarkdown(feature.description)}</p>}
 
                     <div className="mt-6 flex items-center justify-between">
